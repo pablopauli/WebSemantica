@@ -1,1 +1,36 @@
-My Page
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://ar.linkedin.com/pub/pablo-pauli/57/588/542> a foaf:Person ;
+	foaf:name "Pablo Agustin Pauli" ;
+	foaf:title "Sr" ;
+	foaf:givenname "Pablo" ;
+	foaf:family_name "Pauli" ;
+	foaf:nick "Pulpo" ;
+	foaf:birthday "06-08" ;
+	foaf:age "25" ;
+	foaf:homepage <https://www.facebook.com/Pulpo.Pauli> ;
+	foaf:depiction <https://www.facebook.com/photo.php?> ;
+	foaf:phone <tel:+5491167508950> ;
+	foaf:mbox <mailto:pabloagustinpauli@gmail.com> ;
+	foaf:workplaceHomepage <http://corporate.exxonmobil.com> ;
+	foaf:schoolHomepage <http://www.itba.edu.ar/> ;
+	foaf:gender "Male" ;
+	foaf:knows _:juan ,
+			   _:teresa .
+
+<https://ar.linkedin.com/pub/pablo-pauli/57/588/542> 
+	foaf:interest <http://musicbrainz.org/artist/a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432> ,
+				  <http://musicbrainz.org/artist/cc197bad-dc9c-440d-a5b5-d52ba2e14234> .
+
+
+_:juan a foaf:Person ;
+	foaf:name "Juan Martin Buireo" ;
+	foaf:mbox <mailto:bahui80@gmail.com> .
+	rdfs:seeAlso <http://bahui80.github.io/webSemantica/foaf.ttl>
+
+_:teresa a foaf:Person ;
+	foaf:name "Teresa Fontanella De Santis" ;
+	foaf:mbox <mailto:tfontanella011@gmail.com> ;
+	rdfs:seeAlso <http://terefds.github.io/foaf_turtle.ttl> .
